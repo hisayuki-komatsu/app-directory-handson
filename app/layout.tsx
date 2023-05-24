@@ -1,3 +1,4 @@
+import "./globals.css";
 import { Noto_Sans_JP } from "next/font/google";
 
 // 1. フォントの読み込み
