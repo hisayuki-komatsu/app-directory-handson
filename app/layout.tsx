@@ -1,3 +1,4 @@
+import Header from "./Header";
 import "./globals.css";
 import { Noto_Sans_JP } from "next/font/google";
 
@@ -23,7 +24,10 @@ export default function RootLayout({
   return (
     <html lang="ja">
       {/* 3. ページやレイアウトの内容を表示 */}
-      <body className={NotoSansJP.className}>{children}</body>
+      <body className={NotoSansJP.className}>
+        <Header></Header>
+        {children}
+      </body>
     </html>
   );
 }
